@@ -1,0 +1,16 @@
+{
+  "name": "detect-vimium",
+  "version": "0.0.0",
+  "description": "detect the Vimium Chrome extension",
+  "keywords": [
+    "vimium", "detect"
+  ],
+  "author": "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)",
+  "bugs": "https://github.com/EvanHahn/Detect-Vimium/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/EvanHahn/Detect-Vimium.git"
+  },
+  "license": "Unlicense",
+  "main": "detect-vimium.js"
+}
