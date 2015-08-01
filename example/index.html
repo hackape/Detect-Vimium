@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Detect Vimium demo</title>
+<link rel="stylesheet" href="the.css">
+
+</head>
+<body>
+
+<div id="detected">Vimium appears to be present.</div>
+<div id="not-detected">Cannot detect Vimium.</div>
+
+<script src="../detect-vimium.js"></script>
+<script>
+var onEl = document.getElementById('detected');
+var offEl = document.getElementById('not-detected');
+
+function update() {
+  if (hasVimium()) {
+    onEl.style.display = 'block';
+    offEl.style.display = 'none';
+  } else {
+    onEl.style.display = 'none';
+    offEl.style.display = 'block';
+  }
+}
+
+setInterval(update, 1000);
+update();
+</script>
+
+</body>
+</html>
