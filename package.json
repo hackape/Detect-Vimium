@@ -1,9 +1,10 @@
 {
   "name": "detect-vimium",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "detect the Vimium Chrome extension",
   "keywords": [
-    "vimium", "detect"
+    "vimium",
+    "detect"
   ],
   "author": "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)",
   "bugs": "https://github.com/EvanHahn/Detect-Vimium/issues",
