@@ -1,8 +1,15 @@
 function hasVimium () {
+  const spy = document.createElement('div');
   try {
-    var shadowRoot = document.querySelector('html > div').shadowRoot;
-    return Boolean(shadowRoot.querySelector('style').textContent.match(/vimium/));
-  } catch (e) {
+    spy.className = 'vimiumReset';
+    spy.style = 'display: none';
+    document.body.appendChild(spy);
+
+    const isInstalled = window.getComputedStyle(spy).zIndex === '2140000000';
+    document.body.removeChild(spy);
+    return isInstalled
+  } catch (err) {
+    document.body.removeChild(spy);
     return false;
   }
 }
